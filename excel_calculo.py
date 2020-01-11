@@ -21,12 +21,11 @@ for fila in range(2, sheet.max_row + 1):
     datos_censo[estado][condado]["tramos"] += 1
     datos_censo[estado][condado]["poblacion"] += int(poblacion)
 
-california = datos_censo["CA"]
-poblacion_california = 0
+arizona = datos_censo["AZ"]
+poblacion_arizona = 0
 
-for condado in california:
-    poblacion_california += california[condado]["poblacion"]
-    if condado == "San Francisco":
-        print("La poblacion de San Francisco es de", california[condado]["poblacion"], "personas")
+for condado in arizona:
+    poblacion_arizona += arizona[condado]["poblacion"]
+    print("La poblacion de", condado, "es de", arizona[condado]["poblacion"], "personas")
 
-print("La poblacion total de California es de", poblacion_california, "personas")
+print("La poblacion total de Arizona es de", poblacion_arizona, "personas")
