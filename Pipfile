@@ -11,5 +11,3 @@ requests = "*"
 bs4 = "*"
 matplotlib = "*"
 
-[requires]
-python_version = "3.8"
